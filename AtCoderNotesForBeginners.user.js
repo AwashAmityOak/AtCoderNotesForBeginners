@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AtCoderNotesForBeginners
 // @namespace    https://github.com/AwashAmityOak/
-// @version      0.1.0
+// @version      0.2.0
 // @description  Show some knowledges for beginners on AtCoder.
 // @author       AwashAmityOak
 // @match        https://atcoder.jp/contests/*/tasks/*
