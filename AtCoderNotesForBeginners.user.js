@@ -26,87 +26,23 @@
     <tr>
         <td>int</td>
         <td>
-            <math>
-                <mo>&minus;</mo>
-                <msup>
-                    <mn>2</mn>
-                    <mn>31</mn>
-                </msup>
-            </math>
-            <span>〜</span>
-            <math>
-                <msup>
-                    <mn>2</mn>
-                    <mn>31</mn>
-                </msup>
-                <mo>&minus;</mo>
-                <mn>1</mn>
-            </math>
-            <span>&lpar;</span>
-            <math>
-                <mo>&minus;</mo>
-                <mn>2</mn>
-                <mo>&times;</mo>
-                <msup>
-                    <mn>10</mn>
-                    <mn>9</mn>
-                </msup>
-            </math>
-            <span>〜</span>
-            <math>
-                <mn>2</mn>
-                <mo>&times;</mo>
-                <msup>
-                    <mn>10</mn>
-                    <mn>9</mn>
-                </msup>
-            </math>
-            <span>&rpar;</span>
+            <var>-2^{31}, \\ldots, 2^{31}-1</var>
+            <var>(-2 \\times 10^9, \\ldots, 2 \\times 10^9)</var>
         </td>
     </tr>
     <tr>
         <td>long long</td>
         <td>
-            <math>
-                <mo>&minus;</mo>
-                <msup>
-                    <mn>2</mn>
-                    <mn>63</mn>
-                </msup>
-            </math>
-            <span>〜</span>
-            <math>
-                <msup>
-                    <mn>2</mn>
-                    <mn>63</mn>
-                </msup>
-                <mo>&minus;</mo>
-                <mn>1</mn>
-            </math>
-            <span>&lpar;</span>
-            <math>
-                <mo>&minus;</mo>
-                <mn>9</mn>
-                <mo>&times;</mo>
-                <msup>
-                    <mn>10</mn>
-                    <mn>18</mn>
-                </msup>
-            </math>
-            <span>〜</span>
-            <math>
-                <mn>9</mn>
-                <mo>&times;</mo>
-                <msup>
-                    <mn>10</mn>
-                    <mn>18</mn>
-                </msup>
-            </math>
-            <span>&rpar;</span>
+            <var>-2^{63}, \\ldots, 2^{63}-1</var>
+            <var>(-9 \\times 10^{18}, \\ldots, 9 \\times 10^{18})</var>
         </td>
     </tr>
 </tbody>
 `;
+        table.querySelectorAll("var").forEach(e=>{
+            e.innerHTML = "\\(" + e.innerHTML + "\\)";
+        });
+        renderMathInElement(table, katexOptions);
         return table;
     };
 
@@ -122,199 +58,39 @@
 </thead>
 <tbody>
     <tr>
-        <td>
-            <math>
-                <mi>N</mi>
-                <mo>&le;</mo>
-                <mn>10</mn>
-            </math>
-        </td>
-        <td>
-            <math>
-                <mi>O</mi>
-                <mo>&ApplyFunction;</mo>
-                <mrow>
-                    <mo>&lpar;</mo>
-                    <mi>N</mi>
-                    <mo>!</mo>
-                    <mo>&rpar;</mo>
-                </mrow>
-            </math>
-        </td>
+        <td><var>N \\leq 10</var></td>
+        <td><var>O(N!)</var></td>
     </tr>
     <tr>
-        <td>
-            <math>
-                <mi>N</mi>
-                <mo>&le;</mo>
-                <mn>20</mn>
-            </math>
-        </td>
-        <td>
-            <math>
-                <mi>O</mi>
-                <mo>&ApplyFunction;</mo>
-                <mrow>
-                    <mo>&lpar;</mo>
-                    <msup>
-                        <mn>2</mn>
-                        <mi>N</mi>
-                    </msup>
-                    <mo>&rpar;</mo>
-                </mrow>
-            </math>
-        </td>
+        <td><var>N \\leq 20</var></td>
+        <td><var>O(2^N)</var></td>
     </tr>
     <tr>
-        <td>
-            <math>
-                <mi>N</mi>
-                <mo>&le;</mo>
-                <mn>50</mn>
-            </math>
-        </td>
-        <td>
-            <math>
-                <mi>O</mi>
-                <mo>&ApplyFunction;</mo>
-                <mrow>
-                    <mo>&lpar;</mo>
-                    <msup>
-                        <mi>N</mi>
-                        <mn>4</mn>
-                    </msup>
-                    <mo>&rpar;</mo>
-                </mrow>
-            </math>
-        </td>
+        <td><var>N \\leq 50</var></td>
+        <td><var>O(N^4)</var></td>
     </tr>
     <tr>
-        <td>
-            <math>
-                <mi>N</mi>
-                <mo>&le;</mo>
-                <mn>500</mn>
-            </math>
-        </td>
-        <td>
-            <math>
-                <mi>O</mi>
-                <mo>&ApplyFunction;</mo>
-                <mrow>
-                    <mo>&lpar;</mo>
-                    <msup>
-                        <mi>N</mi>
-                        <mn>3</mn>
-                    </msup>
-                    <mo>&rpar;</mo>
-                </mrow>
-            </math>
-        </td>
+        <td><var>N \\leq 500</var></td>
+        <td><var>O(N^3)</var></td>
     </tr>
     <tr>
-        <td>
-            <math>
-                <mi>N</mi>
-                <mo>&le;</mo>
-                <mn>5000</mn>
-            </math>
-        </td>
-        <td>
-            <math>
-                <mi>O</mi>
-                <mo>&ApplyFunction;</mo>
-                <mrow>
-                    <mo>&lpar;</mo>
-                    <msup>
-                        <mi>N</mi>
-                        <mn>2</mn>
-                    </msup>
-                    <mo>&rpar;</mo>
-                </mrow>
-            </math>
-        </td>
+        <td><var>N \\leq 5000</var></td>
+        <td><var>O(N^2)</var></td>
     </tr>
     <tr>
-        <td>
-            <math>
-                <mi>N</mi>
-                <mo>&le;</mo>
-                <msup>
-                    <mn>10</mn>
-                    <mn>5</mn>
-                </msup>
-            </math>
-        </td>
-        <td>
-            <math>
-                <mrow>
-                    <mi>O</mi>
-                    <mo>&ApplyFunction;</mo>
-                    <mrow>
-                        <mo>&lpar;</mo>
-                        <mi>N</mi><mo>&rpar;</mo>
-                    </mrow>
-                </mrow>
-                <mo>or</mo>
-                <mrow>
-                    <mi>O</mi>
-                    <mo>&ApplyFunction;</mo>
-                    <mrow>
-                        <mo>&lpar;</mo>
-                        <mi>N</mi>
-                        <mo>&InvisibleTimes;</mo>
-                        <mi>log</mi>
-                        <mo>&ApplyFunction;</mo>
-                        <mrow>
-                            <mi>N</mi>
-                        </mrow>
-                        <mo>&rpar;</mo>
-                    </mrow>
-                </mrow>
-            </math>
-        </td>
+        <td><var>N \\leq 10^5</var></td>
+        <td><var>O(N)</var> or <var>O(N \\log N)</var></td>
     </tr>
     <tr>
-        <td>
-            <math>
-                <msup>
-                    <mn>10</mn>
-                    <mn>5</mn>
-                </msup>
-                <mo>&lt;</mo>
-                <mi>N</mi>
-            </math>
-        </td>
-        <td>
-            <math>
-                <mrow>
-                    <mi>O</mi>
-                    <mo>&ApplyFunction;</mo>
-                    <mrow>
-                        <mo>&lpar;</mo>
-                        <mi>log</mi>
-                        <mo>&ApplyFunction;</mo>
-                        <mrow>
-                            <mi>N</mi>
-                        </mrow>
-                        <mo>&rpar;</mo>
-                    </mrow>
-                </mrow>
-                <mo>or</mo>
-                <mrow>
-                    <mi>O</mi>
-                    <mo>&ApplyFunction;</mo>
-                    <mrow>
-                        <mo>&lpar;</mo>
-                        <mn>1</mn>
-                        <mo>&rpar;</mo>
-                    </mrow>
-                </mrow>
-            </math>
-        </td>
+        <td><var>10^5 < N</var></td>
+        <td><var>O(\\log N)</var> or <var>O(1)</var></td>
     </tr>
 </tbody>
 `;
+        table.querySelectorAll("var").forEach(e=>{
+            e.innerHTML = "\\(" + e.innerHTML + "\\)";
+        });
+        renderMathInElement(table, katexOptions);
         return table;
     };
 
