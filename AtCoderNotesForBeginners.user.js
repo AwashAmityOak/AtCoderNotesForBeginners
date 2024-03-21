@@ -6,7 +6,7 @@
 // @author       AwashAmityOak
 // @match        https://atcoder.jp/contests/*/tasks/*
 // @grant        none
-// @copyright    2023 AwashAmityOak (https://github.com/AwashAmityOak/)
+// @copyright    2024 AwashAmityOak (https://github.com/AwashAmityOak/)
 // ==/UserScript==
 
 (function () {
