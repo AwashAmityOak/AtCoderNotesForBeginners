@@ -110,7 +110,11 @@
             s.innerHTML = "型のサイズ";
             return s;
         })());
-        typeSizeElement.appendChild(getTypeSizeTable());
+        const typeSizeTable = getTypeSizeTable();
+        typeSizeTable.style.marginTop = "5px";
+        typeSizeTable.style.marginBottom = "5px";
+        typeSizeElement.appendChild(typeSizeTable);
+        typeSizeElement.style.marginBottom = "10px";
         parent.appendChild(typeSizeElement);
 
         const timeComplexityElement = document.createElement("details");
@@ -119,7 +123,10 @@
             s.innerHTML = "時間計算量";
             return s;
         })());
-        timeComplexityElement.appendChild(getTimeComplexityTable());
+        const timeComplexityTable = getTimeComplexityTable();
+        timeComplexityTable.style.marginTop = "5px";
+        timeComplexityTable.style.marginBottom = "5px";
+        timeComplexityElement.appendChild(timeComplexityTable);
         parent.appendChild(timeComplexityElement);
     }
 })();
