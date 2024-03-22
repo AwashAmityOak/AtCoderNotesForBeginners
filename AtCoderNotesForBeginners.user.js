@@ -12,7 +12,7 @@
 (function () {
     "use strict";
 
-    const typeSizeTable = () => {
+    const getTypeSizeTable = () => {
         const table = document.createElement("table");
         table.classList.add("table");
         table.classList.add("table-bordered");
@@ -48,7 +48,7 @@
         return table;
     };
 
-    const timeComplexityTable = () => {
+    const getTimeComplexityTable = () => {
         const table = document.createElement("table");
         table.classList.add("table");
         table.classList.add("table-bordered");
@@ -110,7 +110,7 @@
             s.innerHTML = "型のサイズ";
             return s;
         })());
-        typeSizeElement.appendChild(typeSizeTable());
+        typeSizeElement.appendChild(getTypeSizeTable());
         parent.appendChild(typeSizeElement);
 
         const timeComplexityElement = document.createElement("details");
@@ -119,7 +119,7 @@
             s.innerHTML = "時間計算量";
             return s;
         })());
-        timeComplexityElement.appendChild(timeComplexityTable());
+        timeComplexityElement.appendChild(getTimeComplexityTable());
         parent.appendChild(timeComplexityElement);
     }
 })();
