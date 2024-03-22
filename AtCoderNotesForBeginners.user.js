@@ -16,6 +16,7 @@
         const table = document.createElement("table");
         table.classList.add("table");
         table.classList.add("table-bordered");
+        table.classList.add("table-striped");
         table.innerHTML = `
 <thead>
     <tr>
@@ -51,6 +52,7 @@
         const table = document.createElement("table");
         table.classList.add("table");
         table.classList.add("table-bordered");
+        table.classList.add("table-striped");
         table.innerHTML = `
 <thead>
     <tr>
