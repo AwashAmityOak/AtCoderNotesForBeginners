@@ -26,14 +26,14 @@
 </thead>
 <tbody>
     <tr>
-        <td>int</td>
+        <td><code>int</code></td>
         <td>
             <var>-2^{31}, \\ldots, 2^{31}-1</var>
             <var>(-2 \\times 10^9, \\ldots, 2 \\times 10^9)</var>
         </td>
     </tr>
     <tr>
-        <td>long long</td>
+        <td><code>long long</code></td>
         <td>
             <var>-2^{63}, \\ldots, 2^{63}-1</var>
             <var>(-9 \\times 10^{18}, \\ldots, 9 \\times 10^{18})</var>
