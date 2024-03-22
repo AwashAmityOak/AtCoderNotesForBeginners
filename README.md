@@ -6,3 +6,9 @@ AtCoderにおいて、最初は覚えるのが難しい事柄を、「制約」�
 
 - 型のサイズ
 - 時間計算量
+
+# 参考
+
+## 型のサイズ、時間計算量について参考にした文献
+
+https://raw.githubusercontent.com/recuraki/cphb-ja/master/book.pdf
