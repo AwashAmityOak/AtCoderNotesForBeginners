@@ -14,7 +14,8 @@
 
     const typeSizeTable = () => {
         const table = document.createElement("table");
-        table.className = "table table-bordered";
+        table.classList.add("table");
+        table.classList.add("table-bordered");
         table.innerHTML = `
 <thead>
     <tr>
@@ -48,7 +49,8 @@
 
     const timeComplexityTable = () => {
         const table = document.createElement("table");
-        table.className = "table table-bordered";
+        table.classList.add("table");
+        table.classList.add("table-bordered");
         table.innerHTML = `
 <thead>
     <tr>
