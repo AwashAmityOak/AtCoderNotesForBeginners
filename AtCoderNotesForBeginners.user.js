@@ -105,24 +105,20 @@
         }
 
         const typeSizeElement = document.createElement("details");
-        typeSizeElement.appendChild(
-            (() => {
-                const s = document.createElement("summary");
-                s.innerHTML = "型のサイズ";
-                return s;
-            })(),
-        );
+        typeSizeElement.appendChild((() => {
+            const s = document.createElement("summary");
+            s.innerHTML = "型のサイズ";
+            return s;
+        })());
         typeSizeElement.appendChild(typeSizeTable());
         parent.appendChild(typeSizeElement);
 
         const timeComplexityElement = document.createElement("details");
-        timeComplexityElement.appendChild(
-            (() => {
-                const s = document.createElement("summary");
-                s.innerHTML = "時間計算量";
-                return s;
-            })(),
-        );
+        timeComplexityElement.appendChild((() => {
+            const s = document.createElement("summary");
+            s.innerHTML = "時間計算量";
+            return s;
+        })());
         timeComplexityElement.appendChild(timeComplexityTable());
         parent.appendChild(timeComplexityElement);
     }
