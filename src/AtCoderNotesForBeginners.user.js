@@ -4,6 +4,7 @@
 // @version      0.2.1
 // @description  Show some knowledges for beginners on AtCoder.
 // @author       AwashAmityOak
+// @license      MIT
 // @match        https://atcoder.jp/contests/*/tasks/*
 // @grant        none
 // @copyright    2024 AwashAmityOak (https://github.com/AwashAmityOak)
