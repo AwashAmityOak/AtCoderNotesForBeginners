@@ -10,10 +10,8 @@ AtCoderにおいて、最初は覚えるのが難しい事柄を、「制約」�
 # インストール方法
 
 1. [Tampermonkey](https://www.tampermonkey.net)をインストール
-2. [ソースコード](src/AtCoderNotesForBeginners.user.js)をダウンロード
-3. Tampermonkeyのダッシュボードを開く
-4. ダウンロードしたソースコードを、ダッシュボードへドラッグ＆ドロップ
-5. インストールボタンを押す
+2. [Greasy Forkのスクリプトページ](https://greasyfork.org/ja/scripts/529251-atcodernotesforbeginners)の、「スクリプトをインストール」ボタンを押す
+3. Tampermonkeyのダッシュボードが開かれるので、「Install」ボタンを押す
 
 AtCoderの問題ページを開くと、「制約」セクションの下に、型のサイズと時間計算量が折り畳み形式で表示されていると思います。
 
